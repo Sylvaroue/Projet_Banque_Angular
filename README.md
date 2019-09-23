@@ -6,6 +6,7 @@ The whole concept is to simulate the evolution of an account's balance when oper
 The application's features are the following :
 * login with a user's profile and change its properties
 * access the list of accounts after login
+
   after selecting an account :
 * get automatically the balance at the end of the month and the end of the year
 * add or delete an operation
