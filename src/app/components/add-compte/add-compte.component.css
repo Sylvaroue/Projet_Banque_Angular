@@ -1,0 +1,23 @@
+h4 {
+    width: 50%;
+    margin: 0 0 0 35%;
+    margin-top: 3%;
+    color : royalblue;
+    font : 220% georgia, palatino, serif;
+}
+
+div.saisie {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+div#create {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+
+div.input-group {
+    margin-bottom: 1%;
+}

@@ -1,0 +1,20 @@
+<input type="button" class="suppression btn btn-danger" value="Supprimer le compte" (click)="deleteAccount()"/>
+<input type="button" class="logout btn btn-primary" value="Se déconnecter" (click)="deconnexion()"/>
+
+<div id="entete">
+    <h3>{{ compte.intitule }}</h3>
+    <p>Votre solde actuel est de <b>{{ compte.solde }} euros</b></p>
+    <p>D'après les opérations enregistrées, il sera de :</p>
+        <ul>
+        <div id="prevision">
+            <li><b>{{ prevMonth }} euros</b> à la fin du mois </li>
+            <li><b>{{ prevYear }} euros</b> à la fin de l'année </li>
+        </div>
+        </ul>
+</div>
+
+<div id="maj">
+    <input type="button" class="btn btn-info" value="Mettre à jour le solde" (click)="soldeMaj()"/>
+</div>
+
+<app-operations-compte [compte]="compte"></app-operations-compte>

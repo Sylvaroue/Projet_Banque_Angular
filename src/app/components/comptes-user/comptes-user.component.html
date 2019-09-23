@@ -1,0 +1,29 @@
+<div id="boutons">
+    <input type="button" class="profil btn btn-link" value="Mettre à jour mon profil utilisateur" (click)="editUser()"/>
+    <input type="button" class="logout btn btn-primary" value="Se déconnecter" (click)="deconnexion()"/>
+</div>
+
+<h3>Bienvenue {{ user.username }} !</h3>
+<p id="instruction">Veuillez sélectionner le compte que vous souhaitez utiliser. Vous pouvez également créer un nouveau compte en cliquant sur : 
+        <a (click)="createButtonPressed()" style="cursor: pointer"><b>ce lien</b></a></p>
+
+<div *ngFor="let compte of comptes" id="liste">
+    <table class='table table-bordered'>
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">Référence</th>
+                <th scope="col">Intitulé du compte</th>
+                <th scope="col">Solde</th>
+                <th scope="col">   </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id='ref'>{{ compte.idCompte }}</td>
+                <td id='intitule'>{{ compte.intitule }}</td>
+                <td id='solde'>{{ compte.solde }}</td>
+                <td id='select'><input type="button" class="profil btn btn-link" value="Sélectionner" (click)="selectButtonPressed(compte.idCompte)"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

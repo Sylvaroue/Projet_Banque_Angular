@@ -1,0 +1,27 @@
+<div id="back">
+    <input type="button" class="btn btn-link" value="Revenir à mes comptes" (click)="goBackButtonPressed()"/>
+</div>
+        <div class="panel-heading">
+            <h4>Profil utilisateur - {{user.username}} </h4>
+        </div>
+        <div class ="saisie panel-body">
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="user.nomUser" type="text"
+                    placeholder="Nom" name="intitule"/>
+            </div>
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="user.prenomUser" type="text"
+                    placeholder="Prenom" name="solde"/>
+            </div>
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="user.username" type="text"
+                    placeholder="Username" name="solde"/>
+            </div>
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="user.password" type="text"
+                    placeholder="Password" name="solde"/>
+            </div>
+        </div>
+        <div id="MAJ" class ="input-group">
+            <input type="button" class="btn btn-info btn-lg" value="Mettre à jour mes données" (click)="updateUserClicked()"/>
+        </div>

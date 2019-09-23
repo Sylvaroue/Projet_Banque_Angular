@@ -1,0 +1,18 @@
+<div class = "panel panel-default">
+    <div class="panel-heading">
+        <h4>Création d'un nouveau compte</h4>
+    </div>
+    <div class ="saisie panel-body">
+        <div class ="form-group">
+            <input class="form-control" [(ngModel)]="newCompte.intitule" type="text"
+                placeholder="Intitulé du compte" name="intitule"/>
+        </div>
+        <div class ="input-group">
+            <input class="form-control" [(ngModel)]="newCompte.solde" type="text"
+                placeholder="Solde" name="solde"/>
+        </div>
+        <div class ="input-group" id="create">
+            <input type="button" class="btn btn-info" value="Créer le compte" (click)="addCompteClicked()"/>
+        </div>
+    </div>
+</div>
