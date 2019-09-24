@@ -2,19 +2,18 @@
 <input type="button" class="logout btn btn-primary" value="Se déconnecter" (click)="deconnexion()"/>
 
 <div id="entete">
-    <h3>{{ compte.intitule }}</h3>
-    <p>Votre solde actuel est de <b>{{ compte.solde }} euros</b></p>
-    <p>D'après les opérations enregistrées, il sera de :</p>
-        <ul>
-        <div id="prevision">
-            <li><b>{{ prevMonth }} euros</b> à la fin du mois </li>
-            <li><b>{{ prevYear }} euros</b> à la fin de l'année </li>
-        </div>
-        </ul>
+    <h3>Compte en utilisation : {{ compte.intitule }}</h3>
+    <h5>Votre solde actuel est de <b>{{ compte.solde }} euros</b></h5>
+    <div id="maj">
+        <input type="button" class="btn btn-secondary" value="Mettre à jour le solde" (click)="soldeMaj()"/>
+    </div>
 </div>
-
-<div id="maj">
-    <input type="button" class="btn btn-info" value="Mettre à jour le solde" (click)="soldeMaj()"/>
+<div id="prevision">
+    <h5>Informations : </h5>
+    <p>A la fin du mois, d'après les opérations saisies, le solde sera de <b>{{ prevMonth }} euros</b></p>
+    <p id="p-bas">A la fin de l'année, toujours d'après les opérations saisies, il sera de <b>{{ prevYear }} euros</b></p>
 </div>
 
 <app-operations-compte [compte]="compte"></app-operations-compte>
+
+<app-seuils-compte [compte]="compte"> </app-seuils-compte>

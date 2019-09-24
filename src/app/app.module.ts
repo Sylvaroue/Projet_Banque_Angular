@@ -14,6 +14,7 @@ import { GestionCompteComponent } from './components/gestion-compte/gestion-comp
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { OperationsCompteComponent } from './components/operations-compte/operations-compte.component';
 import { SeuilsCompteComponent } from './components/seuils-compte/seuils-compte.component';
+import { EditSeuilComponent } from './components/edit-seuil/edit-seuil.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SeuilsCompteComponent } from './components/seuils-compte/seuils-compte.
     GestionCompteComponent,
     EditUserComponent,
     OperationsCompteComponent,
-    SeuilsCompteComponent
+    SeuilsCompteComponent,
+    EditSeuilComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +53,10 @@ import { SeuilsCompteComponent } from './components/seuils-compte/seuils-compte.
       {
         path: 'gestion-compte/:id_compte',
         component: GestionCompteComponent
+      },
+      {
+        path: 'edit-seuil/:id_seuil',
+        component: EditSeuilComponent
       },
       {
         path: '',

@@ -1,7 +1,7 @@
 h4 {
-    width: 28%;
+    width: 33%;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 7%;
     color : royalblue;
     font : 220% georgia, palatino, serif;
 }
@@ -9,7 +9,7 @@ h4 {
 div.saisie {
     width: 35%;
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 div#connexion {

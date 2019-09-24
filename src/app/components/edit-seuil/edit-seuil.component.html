@@ -1,0 +1,19 @@
+<a (click)="goBackButtonPressed()" style='cursor: pointer'>Revenir à mon compte</a>
+<div class = "panel panel-default">
+        <div class="panel-heading">
+            <h4> Vous pouvez Modifier votre seuil </h4>
+        </div>
+        <div class ="panel-body">
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="seuil.nomSeuil" type="text"
+                    placeholder="Nom" name="intitule"/>
+            </div>
+            <div class ="form-group">
+                <input class="form-control" [(ngModel)]="seuil.valeur" type="text"
+                    placeholder="montant" name="solde"/>
+            </div>
+            <div class ="input-group">
+                <input type="button" value="Mettre à jour mes données" (click)="updateSeuilClicked()"/>
+            </div>
+        </div>
+</div>

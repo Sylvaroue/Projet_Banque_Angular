@@ -42,6 +42,11 @@ export class CompteServiceService {
     return this.http
     .get<Compte>(SERVER + '/ops-compte/' + compte.idCompte);
   }
+  
+  public getSeuilsCompte(compte: Compte): Observable<any> {
+    return this.http
+    .get<Compte>(SERVER + '/seuils-compte/' + compte.idCompte);
+  }
 
   public soldeMAJ(compte: Compte): Observable<any> {
     return this.http
