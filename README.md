@@ -34,6 +34,8 @@ To download the project, clone it from github using the next command:
 $ git clone https://github.com/Sylvaroue/Projet_Banque_Angular.git
 ```
 
+Then use the command `npm install`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

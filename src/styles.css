@@ -1,1 +1,5 @@
-@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css)
+@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
+html, body, app-root {
+    height: 100%;
+    margin: 0;
+    }

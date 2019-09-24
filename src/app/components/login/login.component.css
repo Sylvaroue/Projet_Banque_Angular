@@ -1,19 +1,38 @@
 h4 {
-    width: 33%;
-    margin: 0 auto;
-    margin-top: 7%;
-    color : royalblue;
-    font : 220% georgia, palatino, serif;
+   width: 90%;
+   font: 100% georgia, palatino, serif;
+   margin: 0 auto;
+   font-size: 33px;
+   margin-top: 3%;
+   margin-bottom: 5%;
+   color: #ADD8E6
 }
-
-div.saisie {
-    width: 35%;
-    margin: 0 auto;
-    margin-top: 3%;
+div.login {
+   position: fixed;
+   background-image:url('/../../assets/poisson.jpg.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
+   background-size: cover;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
 }
-
+div.formulaire {
+   width: 35%;
+   margin: 0 auto;
+   margin-top: 25%;
+   margin-bottom: 10%;
+   position: center;
+}
 div#connexion {
-    width: 25%;
-    margin: 0 auto;
-    margin-top: 10%;
+   width: 25%;
+   margin: 0 auto;
+   margin-top: 10%;
 }
+body {
+   color:bla ck;
+   background-color:white;
+   background-image:url('/../../assets/poisson.jpg.jpg');
+   }
