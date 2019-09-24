@@ -1,6 +1,18 @@
 # ProjetBanque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+This project aims to provide bank users a tool to help managing their budget.
+The whole concept is to simulate the evolution of an account's balance when operations (incomes, spendings) are applied.
+
+The application's features are the following :
+* login with a user's profile and change its properties
+* access the list of accounts after login
+
+  after selecting an account :
+* get automatically the balance at the end of the month and the end of the year
+* add or delete an operation
+* add an operation repeated each month at the same date
+
+This repository contains the Frontend part of the project. The associated Backend can be found in the repository : "Projet_Banque".
 
 ## Getting Started
 
